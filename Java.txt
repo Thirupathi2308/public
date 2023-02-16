@@ -1,0 +1,400 @@
+ / 54.Final -Final spl keyword in java that is used as  non access modifier
+     final class cann't be inherited, final method cann't be overriden ,final variable cann't be changed
+ Finally-finally is used to place import code it will be executed whether the exception is handled or not
+Finalize-finalise is used to perform clean up processing just before the object is garbage collectedr
+55.String buffer                                                                         String builder
+   -string bufer operations are thread safe and synchronized                              .String builder operations are not thread safe
+   -string buffer is to be used when multiple threads are working on same  string      .string builder in the single threaded environment
+                                string builder performance is faster when compare to string buffer
+55.Arraylist                                                             vector
+  -ArrayList is not synchronized                                      .vector is synchronized
+  -Arraylist is fast as its non synchronized                          .vector is slow as it is thread safe
+  -Arraylist doesn't define the icrement size                         .vector defines the increment size
+
+56.HashMap                                                              HashTable
+  -Hashmap is non synchronized and are not thread safe                  . Hashtable is synchronized
+  -Hashmap allows null key and null values                               .Hashtable doesnn't allow any null key/value
+  -Hashmap is fast as compared to hashtable                              .Hashtable is slow as compared to Hashmap
+57.Equals()-equals method used for checking equality of two objects. 
+-->equlaity operator contains reference type
+-->equals method contains content
+                  and equality operator used to compare primitives and objects
+58.infinite loop-if we didn't mention any break statement or proper condtion then loop will continously executed untill stop manually
+59.Encapsulation-Encapsluation in Java is a mechanism of wrapping up the data code together as a single unit.In encapsulation ,the variables of a class
+
+ will be hidden from the other classes and can be acceesed only  through the methods of their current class.
+60.process                                                                 Thread
+  1.An executing instance of a program is called a process                 1.A thread is a subset of the process
+  2.process must use inter process communication to communicate with       2.Threads can directly communicate with other threads of its process
+    sibling process 
+  3.process are indepandant                                                 3.Threads are depandant
+61.String Buffer                                                                   String bUilder
+  1.String buffer operations are thread safe                                       1.String builder operation are not thread safe
+  2.String buffer is to be used when multiple threads are working on same string    2.String builder in the single threaded environment
+  3.Stringbuilder performance is faster when compare to string buffer
+64.stack                                                                                Heap
+   1. stack memory is used only one thread of execution                        1. Heap memory is used all the parts of the appilcation 
+  2.objects stored in the heap are globally acessible                                  2.stack memeory cann't be acceessed by other threads
+65.HashMap                                                                          HashTable
+  1.Hashmap is non synchronized                                                     1.HashTable is synchronized it is thread safe and can be shared with 
+                                                                                         many threads
+ 2.Hashmap allows one null key and multiple null values                              2.Hashtable doesn't allow any nullkey/value
+ 3.hashmap is fast compare to hash table 
+66.infinite loop-If we didn't mention any break statement or proper condition then the loop will be continously executed untill stop manually
+
+
+84.What is primary keywords in cucumber ?
+  Feature-Given ,when ,then,And
+85.Scenario-we need to run a test scenario only one time
+86.Scenario outline-we need to run a test scenario multiple times
+87.Enlist files-Feature file,step defination and TestRunner
+
+88.Feature file =To provide manual test case steps
+  Stepdef =To provide reusable functions based on feature file
+ test runner =To execute automation scripts bassed on feature file-p0l
+88.What are hooks in cucumber ?
+  Hooks are code blocks that execute before or after each cucumber scenario in the execution cycle.This enables us to better control the developement
+ workflow and decrease  code redundancy.
+89.Background-Background keyword is used to  group multiple given statements into a single group.This keyword used when the same set of statements
+ are repeated in each   scenario of the feature file.
+90.Selenium-selenium is an automate tool which ia a widely used for functional testing of the web-based application.it supports Java ,Ruby ,python and c#
+91.Feature file can contain a maximum of 10 scenarios.But the number can vary from project to project.
+92.what is the purpose of cucumber options tag?
+ cucumber options tag is used to provide a link b/w the feature file and step defination file.Each step of the feature file is mapped to a corresponding
+ method on the stepdef file.
+93.what is the meaning of testRunner class in cucumber ?
+ TestRunner class is used to provide the link b/w the feature file and the step def file.
+94.what is the use of features property under the cucumber options tag ?
+ .features property is used to let the cucumber framework identify the location of the feature file
+
+95.Constructor-It is a special method in Java which is used to initialse the object. i.e if class level variables non static variable is not intialize then 
+  constructor will initialize to default values.
+96.Tyes of Constructors ?
+  .Default constructor and user defined constructor
+97.Rules for writing constructor ?
+ .constructor name is same as class name
+ .it shouldn't have any return type.
+ .access modifier is optional
+98.Can constructor can be overloading or not ?
+ yes constructor can be overloaded
+99.constructor overloading-in one class if we found more than one constructor with different parameters list known as constructor overloading.
+100.Inheritance-Inheritance is a mechanism in Java by which one class is allow to inherit the features of another class
+   super class-The class whose methods and variables are inherited it is known as super class
+  sub class-The class that inherits the other class is known as sub class 
+101.Inheritance supports the concept called reusabity ?
+  When we create a new class that includes some of code that we want.we can derive our new class from the existing class 
+
+103.polymorphism-polymorphism is the ability of a message to be displayed more than one form
+104.method overloading-when there are multiple function with same name but different parameters then these functions are said to be overloaded
+105.method overriding -when there are multiple function with same name with same parameters 
+106. compile time polymorphism                                                       Run timr polymorphism
+     1.calling to a method defined based on the type of object is created          1.calling to a method defined based on the type of object is created  
+                                                                                     in run time  
+       in compile time
+      2.Achieved by method overloading                                             2.Achieved by method overriding
+      3.It is also known as static polymorphism                                    3.It is also known as dynamic polymorphism 
+      4.In compile time polymorphism the call is resolved by the compile           4.In run polymorphism the call is not resolved by the compiler
+      5.It is also known as static binding,early binding and overloading           5.It is also known as dynamic binding,late binding and overriding as
+                                                                                          well
+             as well as   
+107.Abstraction-Abstraction is a process of hiding certian implementaion  details and showing only essential information to user .Abstraction can achive 
+   by using abstract and interface.
+108.Abstract-A method which is having a body /definition/which donn't end with semicolon that method called as abstract nethod.
+109.Interface-An interface completely collection of abstract methods.By default in interface all methods are abstract and public.for interface we cann't 
+       create object.to access the interface method,The interface must be implemented by another class.
+110.Exception-An exception is an unwanted /unexpectd event which occurs during the execution of a program i.e at run time that disrupts the normmal flow
+   of the  programs instructions.
+111.Error-An error indicates a serious problem that a reasonable application shouldn't try to catch
+ 
+What is the superclass for Exception & Error in Java?
+Ans: java.lang.Throwable is the root class for all types of Error & Exception   4035630372726006  1128 929
+
+112.Whether multiple catches is possible for a single try block?
+Ans:
+Yes, it is very much possible to declare multiple catch blocks for a single try block. Example, as shown in the below screen capture
+
+112.Checked Exception                                                                 Unchecked exception
+     1.checked exceptions occur at compile time                                          1.unchecked exceptions occur at run time
+     2.THe compiler checks a checked   exception.                230131               2.  THe compiler doesn't check this type of exceptions   
+     3.Here jvm needs the exception to catch and handle                         3.The type of exception cann't be catch or handle
+  Ex-Files not found Exception                                                   Ex-Arithmetic exception
+     Not such field exception                                                       Null pointer exception
+     Interrupted excepton                                                           Array index out of bound exception
+113.Try-Try is a block name is expected  where suspected code is return             
+114.Catch-Catch is a block which is handling the exception .catch cann't be exist without try.
+115 Throw-Throw keyword is used to throw an exception explicitly .it can throw only one exception at a time
+     Throws-Throws keyword is used to declare multiple exceptions sepatrated by comma ,which ever exception occurs if matched with declared ones is thrown
+      automatically.
+
+ClassNotFoundException is a checked exception which is thrown when an application tries to load a class at run time using Class.forName() and the class with specified name are not
+ found in the classpath
+
+NoClassDefFoundError is an error which is thrown when Java Runtime System tries to load the definition of a class and class definition is no longer available
+
+
+
+116.What is the purpose of static methods and variables?
+The methods or variables defined as static are shared among all the objects of the class. The static is the part of the class and not of the object. The static variables are stored 
+  in the class area, and we do not need to create the object to access such variables
+
+117.What are the advantages of Packages in Java?
+
+
+Packages avoid the name clashes.
+The Package provides easier access control.
+We can also have the hidden classes that are not visible outside and used by the package.
+It is easier to locate the related classes.
+
+
+118.Java Constructor	                                                                  Java Method
+A constructor is used to initialize the state of an object.                          	A method is used to expose the behavior of an object. 
+A constructor must not have a return type.	                                         A method must have a return type.
+The constructor is invoked implicitly.	                                                 The method is invoked explicitly.
+
+The constructor name must be same as the class name.	                   The method name may or may not be same as class name.
+
+118.What is the default value of the local variables?
+The local variables are not initialized to any default value, neither primitives nor object references.
+
+119. How many types of constructors are used in Java?
+Based on the parameters passed in the constructors, there are two types of constructors in Java.
+
+Default Constructor: default constructor is the one which does not accept any value. The default constructor is mainly used to initialize the instance variable with the default values.
+ It can also be used for performing some useful task on object creation. A default constructor is invoked implicitly by the compiler if there is no constructor defined in the class.
+Parameterized Constructor: The parameterized constructor is the one which can initialize the instance variables with the given values. In other words, we can say that the constructors
+ which can accept the arguments are called parameterized constructors.
+
+119.What is the static variable?
+The static variable is used to refer to the common property of all objects (that is not unique for each object),
+
+120.What is the static method? 
+A static method belongs to the class rather than the object.  
+There is no need to create the object to call the static methods.   
+A static method can access and change the value of the static variable. 
+
+121.Can we declare the static variables and methods in an abstract class?
+Yes, we can declare static variables and methods in an abstract method. As we know that there is no requirement to make the object to access the static context
+
+122.What are the main uses of this keyword?
+
+
+this can be used to refer to the current class instance variable.
+this can be used to invoke current class method (implicitly)
+this() can be used to invoke the current class constructor.
+
+123.What is aggregation?
+Aggregation can be defined as the relationship between two classes where the aggregate class contains a reference to the class its owns. Aggregation is best described as
+   a has-a relationship
+
+124.What is the difference between aggregation and composition?
+Aggregation represents the weak relationship whereas composition represents the strong relationship.
+
+125. What are the differences between this and super keyword?
+  The super keyword always points to the parent class contexts whereas this keyword always points to the current class context.
+
+126.Method Overloading	                                                            Method Overriding
+1) Method overloading increases the readability of the program.	Method overriding provides the specific implementation of the method that is already provided by its superclass.
+2) Method overloading occurs within the class.	Method overriding occurs in two classes that have IS-A relationship between them.
+3) In this case, the parameters must be different.	In this case, the parameters must be the same.
+
+125.What is the difference between the final method and abstract method?
+The main difference between the final method and abstract method is that the abstract method cannot be final as we need to override them in the subclass to give its definition.
+
+126.What is the difference between abstraction and encapsulation?
+Abstraction hides the implementation details whereas encapsulation wraps code and data into a single unit.
+
+127. Can there be an abstract method without an abstract class?
+No, if there is an abstract method in a class, that class must be abstract.
+
+128.String                                                                                       	StringBuffer
+1.1)	The String class is immutable.	                                                      1,    The StringBuffer class is mutable.
+2)	The String is slow and consumes more memory when you concat                                2.The StringBuffer is fast and consumes less memory when you cancat strings.
+      	
+3)	The String class overrides the equals() method of Object class. So you                   3.The StringBuffer class doesn't override the equals() method of Object class.
+                                                                                                
+129. What is a package in Java? List down various advantages of packages ?
+Packages is a collection of related classes and interfaces which are bundled together. 
+
+.Packages helps in avoiding name clashes
+.They provide easier access control on the code
+.
+130.What is an object in Java and how is it created?
+An object is a real-world entity that has a state and behavior. An object has three characteristics:
+
+State
+Behavior
+Identity
+
+131.What is the difference between a local variable and an instance variable?
+In Java, a local variable is typically used inside a method, constructor, or a block and has only local scope. Thus, this variable can be used only within the scope of a block. 
+The best benefit of having a local variable is that other methods in the class won’t be even aware of that variable.
+
+Example
+1
+2
+3
+4
+if(x > 100)
+{
+String test = "Edureka";
+}
+Whereas, an instance variable in Java, is a variable which is bounded to its object itself. These variables are declared within a class, but outside a method
+
+
+133. What is the difference between break and continue statements?
+                                break	                                                      continue
+1. Can be used in switch and loop (for, while, do while) statements	                      1. Can be only used with loop statements
+2. It causes the switch or loop statements to terminate the moment it is executed	            2. It doesn’t terminate the loop but causes the loop to jump to the next iteration
+
+134. What is the difference between this() and super() in Java?
+In Java, super() and this(), both are special keywords that are used to call the constructor. 
+
+this()	                                                                 super()
+1. this() represents the current instance of a class                 	1. super() represents the current instance of a parent/base class
+2. Used to call the default constructor of the same class           	2. Used to call the default constructor of the parent/base class
+3. Used to access methods of the current class	                       3. Used to access methods of the base class
+
+135. What is Java String Pool?
+Java String pool refers to a collection of Strings which are stored in heap memory. In this, whenever a new object is created, String pool first 
+checks whether the object is already present in the pool or not.
+
+136.Why Java Strings are immutable in nature?
+In Java, string objects are immutable in nature which simply means once the String object is created its state cannot be modified.
+
+137.What is multiple inheritance? Is it supported by Java?
+ If a child class inherits the property from multiple classes is known as multiple inheritance. 
+Java does not allow to extend multiple classes.
+
+138. What do you mean by aggregation?
+An aggregation is a specialized form of Association where all object has their own lifecycle but there is ownership and child object can not belong to another parent object
+
+
+139. What is a constructor overloading in Java?
+   In Java, constructor overloading is a technique of adding any number of constructors to a class each having a different parameter list. The compiler uses the number 
+  of parameters and their types in the list to differentiate the overloaded constructors. 
+140. What is OutOfMemoryError in Java?
+OutOfMemoryError is the subclass of java.lang.Error which generally occurs when our JVM runs out of memory.
+
+141.. What is a Thread?
+A thread is the smallest piece of programmed instructions which can be executed independently by a scheduler. In Java, all the programs will have at least one thread which is
+ known as the main thread.
+
+142. What are the different types of garbage collectors in Java?
+Garbage collection in Java a program which helps in implicit memory management.  garbage collection destroys the object and relieves the memory occupied by it. 
+ Java provides four types of garbage collectors:
+
+Serial Garbage Collector
+Parallel Garbage Collector
+CMS Garbage Collector
+G1 Garbage Collector   18002666867
+a2s3dy45
+
+143.How to findout Dynamic xpath ?
+   List<WebElement>table=driver.findElements(By.xpath("//*[@id=\"prodDetails\"]/div[2]/div[1]/div/div[2]/div/div/table/tbody/tr"));
+JavascriptExecutor jse = (JavascriptExecutor) driver;
+// jse.executeScript("arguments[0].scrollIntoView();",table);
+jse.executeScript("arguments[0].style.border='3px solid red'",table);
+int row= table.size();
+
+  
+144.Static variable	                                                         Non static variable
+Static variables can be accessed using class name	                           Non static variables can be accessed using instance of a class
+Static variables can be accessed by static and non static methods	              Non static variables cannot be accessed inside a static method.
+Static variables reduce the amount of memory used by a program.               	Non static variables do not reduce the amount of memory used by a program
+Static variables are shared among all instances of a class.                    	Non static variables are specific to that instance of a class.
+Static variable is like a global variable and is available to all methods.	     Non static variable is like a local variable and they can be accessed through only instance of a class.
+
+145. Why is the main method static in Java?
+The main method is always static because static members are those methods that belong to the classes, not to an individual object. So if the main method will not be static then for every
+ object, It is available. And that is not acceptable by JVM. JVM calls the main method based on the class 
+ name itself. Not by creating the object.
+
+146. Difference between static methods, static variables, and static classes in java.
+Static Methods and Static variables are those methods and variables that belong to the class of the java program, not to the object of the class. This gets memory where the class is loaded.
+ And these can directly be called with the help of class names.
+For example - We have used mathematical functions in the java program like - max(), min(), sqrt(), pow(), etc. And if we notice that, then we will find that 
+we call it directly with the class name. Like - Math.max(), Math.min(), etc. So that is a static method.  And Similarly static variables we have used like (length) for 
+the array to get the length. So that is the static method.
+Static classes - A class in the java program cannot be static except if it is the inner class. If it is an inner static class, then it exactly works like other static members 
+of the class
+
+147.A Page Factory is one way of implementing PageObject Model which is inbuilt in selenium. In plain POM, you define locators using ‘By’ while in Page Factory, you use FindBy annotation
+ to define page objects. Page Object Model is a design approach while PageFactory is a class which provides implementation of Page Object Model design approach.
+
+
+149.ClassNotFoundException is an exception which occurs when you try to load a class at run time using Class.forName() or loadClass() methods and mentioned classes are not found 
+in the classpath. On the other hand,
+ NoClassDefFoundError is an error which occurs when a particular class is present at compile time but it is missing at run time.
+
+150. What is ClassCastException in Java?
+
+ClassCastException is a RunTimeException which occurs when JVM unable to cast an object of one type to another type.
+
+ 151.What is StackOverflowError in Java?
+
+StackOverflowError is an error which is thrown by the JVM when stack overflows.
+
+A hash code is an integer value that represents the state of an object, and is used to quickly compare objects for equality in these data structures. The hash code should be 
+generated in such a way that two equal objects will have the same hash code, and two unequal objects will have different hash codes.
+
+
+
+
+Reddy Marthala
+ho wiill count upper chars in string in java
+You can count the number of uppercase characters in a string in Java by using a for loop to iterate through the characters in the string and checking if each character is uppercase.
+ Here is one possible implementation:
+
+java
+Copy code
+public static int countUpperCase(String str) {
+    int count = 0;
+    for (int i = 0; i < str.length(); i++) {
+        char c = str.charAt(i);
+        if (Character.isUpperCase(c)) {
+            count++;
+        }
+    }
+    return count;
+}
+
+148.TDD	                                                                BDD
+TDD stands for Test-Driven Development. It is a test-centered development process. This means the developers have first to write the test cases then code.	BDD stands for Behavior Driven Development. It is a Behavior centered development process.
+In TDD, writing a test fails because the specified functionality doesn't exist, then writing the most straightforward code that can make the test pass, then refactoring to remove duplication, etc.	In BDD, creating an executable specification that fails because the feature doesn't exist, then writing the most straightforward code that can make the spec pass. You repeat this until a release candidate is ready to ship.
+TDD tests are written using programming languages such as Java, .Net, Python, Ruby, etc.	BDD tests are written in a human-readable format using Given-When-Then steps. These tests are readable and understandable by non-technical persons also.
+TDD tests are difficult to read by non-programmers as they are written in specific programming languages.	BDD tests are readable by non-programmers also as they are written in a human-readable format.
+The critical difference between TDD and BDD is the scope. TDD is a development practice.	On the other hand, BDD is a team methodology.
+In TDD, the developers write the test cases.	In BDD, the automated specifications are created by users or testers then the developers wiring them to the code under test.
+--------------------------------------------------------------------------------------
+
+
+variables- variables are stored temp data with in a program
+
+primitive data types
+int a=5;
+
+
+int-4bytes  -------long 8byte                                 32239.64        47250 -mAY
+                    sort 2byte
+double-8bytes       byte 1                MART906951544    XXXXXXXXXXX7955-01-06-2021to07-09-2022
+boolean-1byte
+char-2bytes
+
+1. Method =Method is a piece of code which execute some logic
+ in Method code reusable and understand
+  void is return type
+
+2.class=
+Bhavani -7893451272  Bhavani      company -pactera  
+
+I Have overall 4yrs of Experience in the IT Industry 2.6yrs in Automation Testing and 1.6yrs in Manual Testing.My current skills are selenium with java and Framework like cucumber and API Testing .If you have any requirement please let me know.
+
+Thanks!
+Thirupathi Reddy
+9391471650  
+
+https://github.com/Thirupathi2308/MasterBranch_Git.git
+
+https://github.com/Thirupathi2308/Cucumber.git
+SELECT EMPLOYEE1.EmpID,DEPARTMENT.DEPARTMENT.DeptName FROM EMPLOYEE1 INNER JOIN DEPARTMENT  101712725461
+
